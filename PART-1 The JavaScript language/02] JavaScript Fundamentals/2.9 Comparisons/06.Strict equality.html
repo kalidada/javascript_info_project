@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strict equality</title>
+  </head>
+  <body>
+    <p>
+      A regular equality check == has a problem. It cannot differentiate 0 from
+      false:
+    </p>
+
+    <script>
+      alert(0 == false); // true
+    </script>
+    <p>The same thing happens with an empty string:</p>
+    <script>
+      alert("" == false); // true
+    </script>
+
+    <p>A strict equality operator === checks the equality without type conversion.</p>
+    <script>alert( 0 === false ); // false, because the types are different</script>
+  </body>
+</html>

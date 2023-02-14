@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String concatenation with binary +</title>
+  </head>
+  <body>
+    <p>
+      The binary + is the only operator that supports strings in such a way.
+    </p>
+    <p>
+      Other arithmetic operators work only with numbers and always convert their
+      operands to numbers.
+    </p>
+    <script>
+      "use strict";
+      alert(`Substraction of (6 - "2") will convert string to numbers :: ${6 - "2"}`); // 4, converts '2' to a number
+      alert(`Division both the string will convert both ("6" / "2") to number:: ${"6" / "2"}`); // 3, converts both operands to numbers
+    </script>
+  </body>
+</html>

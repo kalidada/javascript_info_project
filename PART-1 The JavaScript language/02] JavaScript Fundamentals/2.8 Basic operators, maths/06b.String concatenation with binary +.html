@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String concatenation with binary +</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+     alert(`The result of (2 + 2 + '1') is "42" and not "221 ":- ${2 + 2 + '1'}`); // "41" and not "221"
+
+//Here, the first operand is a string, the compiler treats the other two operands as strings too. The 2 gets concatenated to '1', so it’s like '1' + 2 = "12" and "12" + 2 = "122".     
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaN</title>
+</head>
+<body>
+    <p>NaN is sticky. Any further mathematical operation on NaN returns NaN:</p>
+    <script>
+        "use strict";
+        alert(NaN + 1); //NaN
+        alert( 3 * NaN); //NaN
+        alert("not a number" / 2 - 1); // NaN
+
+    </script>
+    So, if there’s a NaN somewhere in a mathematical expression, it propagates to the whole result (there’s only one exception to that: NaN ** 0 is 1).
+    <script>
+        alert(NaN ** 0 ); // Is 1
+   
+    </script>
+    
+
+
+</body>
+</html>

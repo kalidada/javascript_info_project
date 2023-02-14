@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigInt</title>
+</head>
+<body>
+    <p>In JavaScript, the “number” type cannot represent integer values larger than (253-1) (that’s 9007199254740991), or less than -(253-1) for negatives. It’s a technical limitation caused by their internal representation.</p>
+    <script>
+        "use strict";
+          alert((2 ** 53)-1);
+          alert(-(2 ** 53)-1);
+    </script>
+    <p>to make a BigInt Integer use 'n' at the end of any number decleration</p>
+    <script>
+        "use strict";
+        let a = 12230000000000000000000000000000000000000000000000000000004n;
+        alert(a);
+    </script>
+</body>
+</html>

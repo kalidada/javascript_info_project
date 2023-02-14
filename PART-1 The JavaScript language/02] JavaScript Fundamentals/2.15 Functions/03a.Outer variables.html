@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outer variables</title>
+</head>
+<body>
+    <p>The function has full access to the outer variable. It can modify it as well.</p>
+    <script>
+
+        let userName = 'John';
+
+        function showMessage(){
+             userName="Bob"; //(1) Changed the outer variable
+
+             let message = 'Hello, ' +userName;
+             alert(message);
+        }
+        alert(userName); // John before the function call
+        showMessage();
+        lert( userName ); // Bob, the value was modified by the function
+    </script>
+</body>
+</html>

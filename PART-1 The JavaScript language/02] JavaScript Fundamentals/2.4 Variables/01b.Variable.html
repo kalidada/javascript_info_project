@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assigning Multiple Variable in one line</title>
+  </head>
+  <body>
+    <p>We can declare multiple variable in one line:</p>
+    <script>
+      "use strict";
+      let user = "John", age = 25, message = "Hello";
+      alert(user);
+      alert(age);
+      alert(message);
+    </script>
+    <p>The multiline variant is a bit longer, but easier to read:</p>
+
+    <script>
+      "use strict";
+      let user1 = "John1";
+      let age1 = 25;
+      let message1 = "Hello";
+      alert(user1);
+      alert(age1);
+      alert(message1);
+    </script>
+    <p>Some people also define multiple variables in this multiline style:</p>
+    <script>
+      "use strict";
+      let user2 = "John2",
+        age2 = 25,
+        message2 = "Hello";
+      alert(user2);
+      alert(age2);
+      alert(message2);
+
+      alert(user2);
+      alert(age2);
+      alert(message2);
+    </script>
+
+    <p>…Or even in the “comma-first” style:</p>
+
+    <script>
+      "use strict";
+
+      let user3 = "John",
+        age3 = 25,
+        message3 = "Hello";
+
+      alert(user3);
+      alert(age3);
+      alert(message3);
+    </script>
+  </body>
+</html>

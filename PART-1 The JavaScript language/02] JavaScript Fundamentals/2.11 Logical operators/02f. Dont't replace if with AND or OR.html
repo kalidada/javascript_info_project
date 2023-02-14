@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Don’t replace if with || or &&</title>
+  </head>
+  <body>
+    <p>
+      The action in the right part of && would execute only if the evaluation
+      reaches it. That is, only if (x > 0) is true. So we basically have an
+      analogue for:
+    </p>
+    <script>
+      "use strict";
+      let x = 1;
+      x > 0 && alert("Greater than zero!");
+    </script>
+
+    <script>
+      "use strict";
+      let y = 1;
+
+      if (y > 0) alert("Greater than zero!");
+    </script>
+  </body>
+</html>

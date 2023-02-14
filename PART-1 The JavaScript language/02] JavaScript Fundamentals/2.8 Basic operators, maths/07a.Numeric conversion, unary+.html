@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Numeric conversion, unary +</title>
+  </head>
+  <body>
+        <p>
+      The need to convert strings to numbers arises very often. For example, if
+      we are getting values from HTML form fields, they are usually strings.
+      What if we want to sum them?
+    </p>
+    <p>The binary plus would add them as strings:</p>
+
+    <script>
+      "use strict";
+      let apples = "2";
+      let oranges = "3";
+
+      alert(`Adding two numbers as string e.g. "2" & "3" will concatenate them, not tha actual SUM:: ${apples + oranges}`); // "23", the binary plus concatenates strings
+    </script>
+  </body>
+</html>

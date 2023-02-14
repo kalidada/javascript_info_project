@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Numeric Conversion</title>
+  </head>
+  <body>
+    <p>
+     Explicit conversion is usually required when we read a value from a string-based source like a text form but expect a number to be entered.
+
+If the string is not a valid number, the result of such a conversion is NaN. For instance:
+    </p>
+
+    <script>
+      "use strict";
+      let str = "abc";
+      let age = Number("an arbitrary string instead of a number");
+
+      alert(age); // NaN, conversion failed
+    </script>
+  </body>
+</html>

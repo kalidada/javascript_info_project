@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outer variables</title>
+  </head>
+  <body>
+    <p>
+      The outer variable is only used if there’s no local one. If a same-named
+      variable is declared inside the function then it shadows the outer one.
+      For instance, in the code below the function uses the local userName. The
+      outer one is ignored:
+    </p>
+    <script>
+      let userName = "John";
+
+      function showMessage() {
+        let userName = "Bob"; // declare a local variable
+
+        let message = "Hello, " + userName; // Bob
+        alert(message);
+      }
+
+      // the function will create and use its own userName
+      showMessage();
+
+      alert(userName); // John, unchanged, the function did not access the outer variable
+    </script>
+  </body>
+</html>
